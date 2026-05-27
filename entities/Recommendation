@@ -1,0 +1,34 @@
+{
+  "name": "Recommendation",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "composer": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "added",
+        "declined"
+      ],
+      "default": "pending"
+    },
+    "admin_response": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "user_email",
+    "title"
+  ]
+}

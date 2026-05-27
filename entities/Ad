@@ -1,0 +1,24 @@
+{
+  "name": "Ad",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "file_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "media_type": {
+      "type": "string",
+      "enum": [
+        "image",
+        "video"
+      ]
+    }
+  },
+  "required": [
+    "title",
+    "file_url"
+  ]
+}
