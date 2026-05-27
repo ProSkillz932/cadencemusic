@@ -1,0 +1,19 @@
+{
+  "name": "Favourite",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "sheet_music_id": {
+      "type": "string"
+    },
+    "sheet_music_title": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "user_email",
+    "sheet_music_id"
+  ]
+}

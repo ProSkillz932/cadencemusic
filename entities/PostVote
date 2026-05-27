@@ -1,0 +1,26 @@
+{
+  "name": "PostVote",
+  "type": "object",
+  "properties": {
+    "post_id": {
+      "type": "string"
+    },
+    "reply_id": {
+      "type": "string"
+    },
+    "user_email": {
+      "type": "string"
+    },
+    "vote": {
+      "type": "string",
+      "enum": [
+        "up",
+        "down"
+      ]
+    }
+  },
+  "required": [
+    "user_email",
+    "vote"
+  ]
+}

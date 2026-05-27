@@ -1,0 +1,44 @@
+{
+  "name": "CommunityMember",
+  "type": "object",
+  "properties": {
+    "community_id": {
+      "type": "string"
+    },
+    "user_email": {
+      "type": "string"
+    },
+    "role": {
+      "type": "string",
+      "enum": [
+        "owner",
+        "member"
+      ],
+      "default": "member"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "active",
+        "pending",
+        "muted",
+        "removed"
+      ],
+      "default": "active"
+    },
+    "mute_until": {
+      "type": "string"
+    },
+    "warn_count": {
+      "type": "number",
+      "default": 0
+    },
+    "last_warn_reason": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "community_id",
+    "user_email"
+  ]
+}

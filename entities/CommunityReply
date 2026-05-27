@@ -1,0 +1,37 @@
+{
+  "name": "CommunityReply",
+  "type": "object",
+  "properties": {
+    "post_id": {
+      "type": "string"
+    },
+    "parent_reply_id": {
+      "type": "string"
+    },
+    "user_email": {
+      "type": "string"
+    },
+    "username": {
+      "type": "string"
+    },
+    "profile_image": {
+      "type": "string"
+    },
+    "content": {
+      "type": "string"
+    },
+    "upvotes": {
+      "type": "number",
+      "default": 0
+    },
+    "downvotes": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "required": [
+    "post_id",
+    "user_email",
+    "content"
+  ]
+}

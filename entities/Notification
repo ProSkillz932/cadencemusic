@@ -1,0 +1,42 @@
+{
+  "name": "Notification",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "mention",
+        "recommendation_update",
+        "ticket_update",
+        "warning",
+        "reply_to_reply",
+        "admin_message",
+        "new_recommendation"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "body": {
+      "type": "string"
+    },
+    "is_read": {
+      "type": "boolean",
+      "default": false
+    },
+    "link": {
+      "type": "string"
+    },
+    "from_email": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "user_email",
+    "type",
+    "title"
+  ]
+}

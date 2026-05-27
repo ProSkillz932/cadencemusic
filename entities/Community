@@ -1,0 +1,45 @@
+{
+  "name": "Community",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "owner_email": {
+      "type": "string"
+    },
+    "profile_image": {
+      "type": "string",
+      "format": "uri"
+    },
+    "is_private": {
+      "type": "boolean",
+      "default": false
+    },
+    "auto_join": {
+      "type": "boolean",
+      "default": true
+    },
+    "invite_code": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "active",
+        "taken_down"
+      ],
+      "default": "active"
+    },
+    "admin_warning": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "name",
+    "owner_email"
+  ]
+}

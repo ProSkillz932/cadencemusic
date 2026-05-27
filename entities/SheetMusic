@@ -1,0 +1,50 @@
+{
+  "name": "SheetMusic",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "composer": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "Classical",
+        "Jazz",
+        "Pop",
+        "Film",
+        "Contemporary",
+        "Folk"
+      ]
+    },
+    "difficulty": {
+      "type": "string",
+      "enum": [
+        "Beginner",
+        "Intermediate",
+        "Advanced"
+      ]
+    },
+    "instrument": {
+      "type": "string"
+    },
+    "preview_image": {
+      "type": "string",
+      "format": "uri"
+    },
+    "file_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "pages": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "title",
+    "composer",
+    "category"
+  ]
+}

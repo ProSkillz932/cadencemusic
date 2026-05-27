@@ -1,0 +1,28 @@
+{
+  "name": "Subscription",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "plan": {
+      "type": "string",
+      "enum": [
+        "free_premium"
+      ],
+      "default": "free_premium"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "active",
+        "cancelled"
+      ],
+      "default": "active"
+    }
+  },
+  "required": [
+    "user_email",
+    "status"
+  ]
+}

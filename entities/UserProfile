@@ -1,0 +1,36 @@
+{
+  "name": "UserProfile",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string"
+    },
+    "username": {
+      "type": "string"
+    },
+    "profile_image": {
+      "type": "string",
+      "format": "uri"
+    },
+    "bio": {
+      "type": "string"
+    },
+    "is_flagged": {
+      "type": "boolean",
+      "default": false
+    },
+    "flagged_reason": {
+      "type": "string"
+    },
+    "is_premium": {
+      "type": "boolean",
+      "default": false
+    },
+    "username_changed_at": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "user_email"
+  ]
+}
